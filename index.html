@@ -8,190 +8,130 @@
     <title>Esercizio bootstrap</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">MyMusic</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="#albums">Favourite Albums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#bestalbum">The best album ever</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
 
-      <div class="container-fluid p-4">
-        <div class="row gy-5 justify-content-around">
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <section id="albums">
+        <div class="container">
+            <div class="row my-5">
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="assets/bad.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bad</h5>
+                            <p class="card-text">Michael Jackson</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">POP/ROCK</li>
+                            <li class="list-group-item">Duration 48:40</li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+    
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="assets/inthecourtofthedragon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">In the court of the dragon</h5>
+                            <p class="card-text">Trivium</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">METALCORE</li>
+                            <li class="list-group-item">Duration 52:11</li>
+                        </ul>
+                    </div>
                 </div>
+    
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="assets/underclasshero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Underclass Hero</h5>
+                            <p class="card-text">Sum41</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">PUNK ROCK</li>
+                            <li class="list-group-item">Duration 51:49</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="assets/panic.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Panic</h5>
+                            <p class="card-text">From Ashes to New</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">NU METAL</li>
+                            <li class="list-group-item">Duration 35:43</li>
+                        </ul>
+                    </div>
+                </div>
+    
             </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card col-6 col-md-4 col-lg-3" style="width: 18rem;">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-
-
         </div>
+   
+    </section>
 
-              
+    <section id="bestalbum">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="card text-bg-dark">
+                        <img src="assets/blackalbum.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">THE BLACK ALBUM</h5>
+                            <p class="card-text">METALLICA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Duration 62:31</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tracklist</h5>
+                            <p class="card-text">Enter Sandman</p>
+                            <p class="card-text">Sad but True</p>
+                            <p class="card-text">Holier than Thou</p>
+                            <p class="card-text">The Unforgiven</p>
+                            <p class="card-text">Wherever I May Roam</p>
+                            <p class="card-text">Don't Tread on Me</p>
+                            <p class="card-text">Through the Never</p>
+                            <p class="card-text">Nothing Else Matters</p>
+                            <p class="card-text">Of Wolf and Man</p>
+                            <p class="card-text">The God That Failed</p>
+                            <p class="card-text">My Friend of Misery</p>
+                            <p class="card-text">The Struggle Within</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
+       
+    </section>
       
 
 
